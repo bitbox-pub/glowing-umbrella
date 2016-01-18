@@ -27,7 +27,7 @@ function bootstrap() {
     })
 
 	/** bit box to document body */
-    app = new bit(hello, document.body)
+    app = new bit(boxy, document.body)
 
 	/** publish changes */
     pub(app, 'name', 'Scooby Doo')
