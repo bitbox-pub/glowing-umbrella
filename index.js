@@ -8,6 +8,7 @@ System.import('github:bitbox-pub/bitbox')
 
 function bootstrap() {
 
+	/** edit.box */
     var edit = box(function() {
         return box('input', {
             on: { input: e => pub(this, 'name', e.target.value) },
@@ -15,8 +16,9 @@ function bootstrap() {
         })
     })
 
-    var hello = box(function(props) {
-        return box('hello', [
+	/** boxy.box */
+    var boxy = box(function(props) {
+        return box('boxy', [
             box('h1', 'Hello ' + this.name),
             edit.call(this)
         ])
@@ -24,8 +26,10 @@ function bootstrap() {
         name: 'World'
     })
 
+	/** bit box to document body */
     app = new bit(hello, document.body)
 
-    pub(app, 'name', 'sereban')
+	/** publish changes */
+    pub(app, 'name', 'Scooby Doo')
 
 }
