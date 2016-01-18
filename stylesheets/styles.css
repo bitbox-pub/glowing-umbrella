@@ -1,11 +1,11 @@
 boxy {
-  background-color: #f3f3f3;
-  padding: 50px;
-  font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #727272;
-  font-weight: 400;
+	display: block;
+	background-color: #f3f3f3;
+	padding: 50px;
+	font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #727272;
+	font-weight: 400;
 }
-
 boxy h1 {
-    font-size: 42px;
+	font-size: 42px;
 }
