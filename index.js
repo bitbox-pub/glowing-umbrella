@@ -12,7 +12,8 @@ function bootstrap() {
     var edit = box(function() {
         return box('input', {
             on: { input: e => pub(this, 'name', e.target.value) },
-            attrs: { value: this.name }
+            attrs: { value: this.name },
+			props: { autofocus: 1 }
         })
     })
 
